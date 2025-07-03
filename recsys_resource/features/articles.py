@@ -8,13 +8,6 @@ from sentence_transformers import SentenceTransformer
 
 
 def get_article_id(df: pl.DataFrame) -> pl.Series:
-    """
-    Extracts and returns the article_id column as a string.
-    Parameters:
-    - df (pl.DataFrame): Input DataFrame containing the 'article_id' column.
-    Returns:
-    - pl.Series: Series containing the 'article_id' column as strings.
-    """
     return df["article_id"].cast(pl.Utf8)
 
 
