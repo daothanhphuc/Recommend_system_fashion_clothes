@@ -15,7 +15,6 @@ def generate_interaction_data(trans_df):
         hours = np.random.randint(min_hours, max_hours, size=count)
         return base_timestamp - (hours * 3600000)
 
-    # Ratios to ensure more realistic interactions
     CLICK_BEFORE_PURCHASE_PROB = 0.9
     MIN_IGNORES = 40
     MAX_IGNORES = 60
